@@ -32,7 +32,7 @@ public class Patient {
     //@Column(name="patient_name",length = 30,nullable = false)
     @Column(length = 30,nullable = false)
     private String name;
-    @ToString.Exclude
+    //@ToString.Exclude
     private LocalDate birthDate;
     @Column(unique = true, nullable = false)
     private String email;
@@ -43,5 +43,7 @@ public class Patient {
 
     @Enumerated(EnumType.STRING)
     private BloodGroupType bloodGroup;
+
+    private String gender;
 
 }
